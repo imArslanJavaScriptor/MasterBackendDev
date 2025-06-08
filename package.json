@@ -1,0 +1,26 @@
+{
+  "name": "masterbackenddev",
+  "version": "1.0.0",
+  "description": "Master Backend Development",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imArslanJavaScriptor/MasterBackendDev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/imArslanJavaScriptor/MasterBackendDev/issues"
+  },
+  "homepage": "https://github.com/imArslanJavaScriptor/MasterBackendDev#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.15.1"
+  }
+}
