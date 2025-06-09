@@ -1,7 +1,8 @@
 import express from "express"
 import dotenv from "dotenv"
 import connectBD from "./db/database.js"
-import userRoute from "./routes/user.route.js"
+import userRouter from "./routes/user.route.js"
+import todoRouter from "./routes/todo.route.js"
 const app = express()
 
 dotenv.config()
@@ -9,7 +10,9 @@ connectBD()
 
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
-app.use("/api/v1/user", userRoute)
+
+app.use("/api/v1/user", userRouter)
+app.use("/api/v1/todo", todoRouter)
 
 const PORT = process.env.PORT || 8000
 
