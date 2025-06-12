@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-[#242424]
+}
+
+.btn {
+  @apply rounded-[4px] bg-gray-800 text-white px-5 py-3 text-sm font-medium
+}

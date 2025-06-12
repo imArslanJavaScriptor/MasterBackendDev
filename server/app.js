@@ -4,6 +4,7 @@ import connectBD from "./db/database.js"
 import userRouter from "./routes/user.route.js"
 import todoRouter from "./routes/todo.route.js"
 import cookieParser from "cookie-parser"
+import cors from "cors"
 
 const app = express()
 
@@ -13,6 +14,10 @@ connectBD()
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 app.use(cookieParser())
+app.use(cors({
+    origin: "http://localhost:5173",
+    credentials: true
+}))
 
 app.use("/api/v1/user", userRouter)
 app.use("/api/v1/todo", todoRouter)
